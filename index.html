@@ -8,6 +8,46 @@
 <body>
     <header>
         <h1>Recetas de platos internacionales</h1>
+        <main>
+            <h3>Ingresa tus datos y seleccioná en que cocina te queres especializar</h3>
+            <form action="./form/respuesta.html">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre y Apellido </label>
+                    <input name="nombre" type="text" size="50">
+                    <br>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" name="correo">
+                </fieldset>
+                <fieldset>
+                    <legend>Seleccioná el país del que querés especializarte</legend>
+                    <input type="checkbox" name="opcion1">
+                    <label for="opcion1">Argentina</label>
+                    <input type="checkbox" name="opcion2">
+                    <label for="opcion2">Francia</label>
+                    <input type="checkbox" name="opcion3">
+                    <label for="opcion3">Mexico</label>
+                    <input type="checkbox" name="opcion4">
+                    <label for="opcion4">Corea</label>
+                    <input type="checkbox" name="opcion5">
+                    <label for="opcion5">Italia</label>
+                    <input type="checkbox" name="opcion6">
+                    <label for="opcion6">Arabe</label>
+                    <br>
+                    <label for="turno">Turno</label>
+                    <select name="turno">
+                        <option value="valor1">Mañana</option>
+                        <option value="valor2">Tarde</option>
+                        <option value="valor3" selected="true">Noche</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Acciones del formulario</legend>
+                    <input type="submit" value="Enviar">    <!--NO PUEDE FALTAR-->
+                    <input type="reset" value="Borra datos">
+                </fieldset>
+            </form>
+        </main>
         <div>
             <img src="Imagenes/Bandera_Argentina.png" alt="Bandera Argentina">
             <a href="./sitios/argentina.html">Argentina</a>
